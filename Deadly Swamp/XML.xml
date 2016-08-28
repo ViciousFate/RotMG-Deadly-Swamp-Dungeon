@@ -1,0 +1,144 @@
+
+  <Object type="0x5300" id="Deadonus Swampen">
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture> //This should be the Boss Wait texture.*
+      <File>chars16x16dMountains1</File>
+      <Index>0x0a</Index>
+    </AnimatedTexture> 
+    <AltTexture id="1"> //This should be the Boss Final texture.*  
+      <AnimatedTexture>
+        <File>chars16x16dMountains1</File>
+        <Index>0x08</Index>
+      </AnimatedTexture>
+    </AltTexture>
+    <AltTexture id="2"> //Invisible Phase. Summoning Phase.*
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+    </AltTexture>
+       <Projectile id="0">
+         <ObjectId>H Creation Energy</ObjectId>
+         <Damage>88</Damage>
+         <Speed>40</Speed>
+         <Size>109</Size>
+         <LifetimeMS>10000</LifetimeMS>
+      </Projectile>
+       <Projectile id="1">
+         <ObjectId>H Creation Blast</ObjectId>
+         <Damage>150</Damage>
+         <Speed>80</Speed>
+         <Size>90</Size>
+         <LifetimeMS>10000</LifetimeMS>
+      </Projectile>
+       <Projectile id="2">
+         <ObjectId>H Creation Wave</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>10000</LifetimeMS>
+      </Projectile>  
+    <StatisImmune/>
+    <ParalyzeImmune/>
+    <DazedImmune/>
+    <StunImmune/>
+    <HitSound>monster/bats_hit</HitSound>
+    <DeathSound>monster/medusa_death</DeathSound>
+    <Size>126</Size>
+    <ShadowSize>82</ShadowSize>
+    <MaxHitPoints>50000</MaxHitPoints>
+    <Defense>35</Defense>
+    <DisplayId>Deadonus Swampen</DisplayId>
+  </Object>
+  <Object type="0x5301" id="Deadly Swamp Summon">
+    <Enemy/>
+    <Class>Character</Class>
+    <AnimatedTexture>
+      //This should be the Summons texture*
+      <File>chars16x16dMountains1</File>
+      <Index>0x09</Index>
+    </AnimatedTexture>
+    
+       <Projectile id="0">
+         <ObjectId>Science Confuse Spin</ObjectId>
+         <Damage>102</Damage>
+         <Speed>45</Speed>
+         <Size>99</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+    <HitSound>monster/default_hit</HitSound>
+    <DeathSound>monster/bats_death</DeathSound>
+    <Size>95</Size>
+    <ShadowSize>60</ShadowSize>
+    <MaxHitPoints>5000</MaxHitPoints>
+    <Defense>60</Defense>
+  </Object>
+  
+  <Object type="0x5302" id="Deadly Swamp Invis1">
+    <NoMiniMap/>
+    <Enemy/>
+    <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+       <Projectile id="0">
+         <ObjectId>Science Fire Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>20</Speed>
+         <Size>82</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="6">Armor Broken</ConditionEffect>
+      </Projectile>
+    <MaxHitPoints>99999</MaxHitPoints> //Ensuring it doesn't die randomly by a bug/glitch.*
+    <StatisImmune/>
+    <ParalyzeImmune/>
+    <DazedImmune/>
+    <StunImmune/>
+  </Object>
+
+  <Object type="0x5303" id="Deadly Swamp Invis2">
+    <NoMiniMap/>
+    <Enemy/>
+    <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+       <Projectile id="0">
+         <ObjectId>Green Gas</ObjectId>
+         <Damage>50</Damage>
+         <Speed>120</Speed>
+         <Size>82</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+    <MaxHitPoints>99999</MaxHitPoints> //Ensuring it doesn't die randomly by a bug/glitch.*
+    <StatisImmune/>
+    <ParalyzeImmune/>
+    <DazedImmune/>
+    <StunImmune/>
+  </Object>
+
+  <Object type="0x5304" id="Deadly Swamp Invis3">
+    <NoMiniMap/>
+    <Enemy/>
+    <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+       <Projectile id="0">
+         <ObjectId>Skull Bolt</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>85</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+    <MaxHitPoints>99999</MaxHitPoints> //Ensuring it doesn't die randomly by a bug/glitch.*
+    <StatisImmune/>
+    <ParalyzeImmune/>
+    <DazedImmune/>
+    <StunImmune/>
+  </Object>
